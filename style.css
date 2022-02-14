@@ -16,7 +16,7 @@
   color: white;
   font-size: 40px;
   padding-top: 40px;
-  text-align: right;
+  text-align: end;
 }
 
 .calculator__body--buttons {
@@ -26,7 +26,6 @@
       grid-template-columns: 75% 25%;
   -ms-grid-rows: 20% 2fr;
       grid-template-rows: 20% 2fr;
-  grid-gap: 5px;
 }
 
 .calculator__body--buttons .calculator__buttons--top {
@@ -47,27 +46,32 @@
 
 .calculator__body--buttons .calculator__buttons--top .button__top--clear {
   background-color: lightgrey;
-  border-radius: 50%;
   padding: 25px;
+  font-size: 20px;
+  -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .calculator__body--buttons .calculator__buttons--top .button__top--plusminus {
   background-color: lightgrey;
-  border-radius: 50%;
   padding: 25px;
+  font-size: 20px;
+  -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .calculator__body--buttons .calculator__buttons--top .button__top--percentage {
   background-color: lightgrey;
-  border-radius: 50%;
+  font-size: 20px;
   padding: 25px;
+  -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .calculator__body--buttons .button__divide {
   background-color: orange;
-  border-radius: 50%;
   padding: 25px;
-  font-size: 40px;
+  font-size: 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -96,90 +100,90 @@
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--9 {
-  height: 30px;
-  width: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  text-align: center;
   background-color: #404040;
-  border-radius: 50%;
   padding: 25px;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
           box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  color: #d3d3d3;
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--8 {
-  height: 30px;
-  width: 30px;
   text-align: center;
   background-color: #404040;
-  border-radius: 50%;
   padding: 25px;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
           box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  color: #d3d3d3;
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--7 {
   background-color: #404040;
-  border-radius: 50%;
   padding: 25px;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
           box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  color: #d3d3d3;
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--6 {
   background-color: #404040;
-  border-radius: 50%;
   padding: 25px;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
           box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  color: #d3d3d3;
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--5 {
   background-color: #404040;
-  border-radius: 50%;
   padding: 25px;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
           box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  color: #d3d3d3;
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--4 {
   background-color: #404040;
-  border-radius: 50%;
   padding: 25px;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
           box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  color: #d3d3d3;
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--3 {
   background-color: #404040;
-  border-radius: 50%;
   padding: 25px;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
           box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  color: #d3d3d3;
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--2 {
   background-color: #404040;
-  border-radius: 50%;
   padding: 25px;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
           box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  color: #d3d3d3;
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--1 {
   background-color: #404040;
-  border-radius: 50%;
   padding: 25px;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
           box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  color: #d3d3d3;
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--0 {
   background-color: #404040;
-  border-radius: 25%;
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
@@ -188,14 +192,17 @@
   padding: 25px;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
           box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  color: #d3d3d3;
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--decimal {
   background-color: #404040;
-  border-radius: 50%;
   padding: 25px;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
           box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  color: #d3d3d3;
 }
 
 .calculator__body--buttons .calculator__buttons--operators {
@@ -211,31 +218,38 @@
       grid-template-rows: repeat(4, 1fr);
   grid-gap: 5px;
   text-align: center;
-  font-size: 40px;
 }
 
 .calculator__body--buttons .calculator__buttons--operators .button__multiply {
   background-color: orange;
-  border-radius: 50%;
   padding: 25px;
+  font-size: 20px;
+  -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .calculator__body--buttons .calculator__buttons--operators .button__subtract {
   background-color: orange;
-  border-radius: 50%;
   padding: 25px;
+  font-size: 20px;
+  -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .calculator__body--buttons .calculator__buttons--operators .button__add {
   background-color: orange;
-  border-radius: 50%;
   padding: 25px;
+  font-size: 20px;
+  -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .calculator__body--buttons .calculator__buttons--operators .button__equals {
   background-color: orange;
-  border-radius: 50%;
   padding: 25px;
+  font-size: 20px;
+  -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 @media screen and (max-width: 380px) {
