@@ -22,10 +22,11 @@
 .calculator__body--buttons {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 70% 30%;
-      grid-template-columns: 70% 30%;
+  -ms-grid-columns: 75% 25%;
+      grid-template-columns: 75% 25%;
   -ms-grid-rows: 20% 2fr;
       grid-template-rows: 20% 2fr;
+  grid-gap: 5px;
 }
 
 .calculator__body--buttons .calculator__buttons--top {
@@ -80,6 +81,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[4];
@@ -90,15 +96,26 @@
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--9 {
+  height: 30px;
+  width: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   background-color: #404040;
   border-radius: 50%;
   padding: 25px;
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--8 {
+  height: 30px;
+  width: 30px;
   background-color: #404040;
   border-radius: 50%;
   padding: 25px;
+  -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--7 {
