@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.calculator__body {
+  background-color: #972828;
+}
+
+.calculator__output {
+  background-color: darkslategray;
+  color: white;
+  font-size: 30px;
+  padding-top: 30px;
+}
+
+.calculator__body--buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
+}
+
+.calculator__body--buttons .calculator__buttons--numbers {
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  font-size: 30px;
+  color: white;
+}
+
+.calculator__body--buttons .calculator__buttons--numbers .button__number--9 {
+  background-color: #404040;
+  border-radius: 50%;
+  padding: 25px;
+}
+
+.calculator__body--buttons .calculator__buttons--numbers .button__number--8 {
+  background-color: #404040;
+  border-radius: 50%;
+  padding: 25px;
+}
+
+.calculator__body--buttons .calculator__buttons--numbers .button__number--7 {
+  background-color: #404040;
+  border-radius: 50%;
+  padding: 25px;
+}
+
+.calculator__body--buttons .calculator__buttons--numbers .button__number--6 {
+  background-color: #404040;
+  border-radius: 50%;
+  padding: 25px;
+}
+
+.calculator__body--buttons .calculator__buttons--numbers .button__number--5 {
+  background-color: #404040;
+  border-radius: 50%;
+  padding: 25px;
+}
+
+.calculator__body--buttons .calculator__buttons--numbers .button__number--4 {
+  background-color: #404040;
+  border-radius: 50%;
+  padding: 25px;
+}
+
+.calculator__body--buttons .calculator__buttons--numbers .button__number--3 {
+  background-color: #404040;
+  border-radius: 50%;
+  padding: 25px;
+}
+
+.calculator__body--buttons .calculator__buttons--numbers .button__number--2 {
+  background-color: #404040;
+  border-radius: 50%;
+  padding: 25px;
+}
+
+.calculator__body--buttons .calculator__buttons--numbers .button__number--1 {
+  background-color: #404040;
+  border-radius: 50%;
+  padding: 25px;
+}
+
+.calculator__body--buttons .calculator__buttons--numbers .button__number--0 {
+  background-color: #404040;
+  border-radius: 25%;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 4/1/5/3;
+  padding: 25px;
+}
+
+.calculator__body--buttons .calculator__buttons--numbers .button__number--decimal {
+  background-color: #404040;
+  border-radius: 50%;
+  padding: 25px;
+}
+
+.calculator__body--buttons .calculator__buttons--operators {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  text-align: center;
+  font-size: 30px;
+}
+
+.calculator__body--buttons .calculator__buttons--operators .button__divide {
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.calculator__body--buttons .calculator__buttons--operators .button__multiply {
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.calculator__body--buttons .calculator__buttons--operators .button__subtract {
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.calculator__body--buttons .calculator__buttons--operators .button__add {
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.calculator__body--buttons .calculator__buttons--operators .button__equals {
+  background-color: orange;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=style.css.map */
