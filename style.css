@@ -106,11 +106,14 @@
   background-color: #404040;
   border-radius: 50%;
   padding: 25px;
+  -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--8 {
   height: 30px;
   width: 30px;
+  text-align: center;
   background-color: #404040;
   border-radius: 50%;
   padding: 25px;
@@ -122,42 +125,56 @@
   background-color: #404040;
   border-radius: 50%;
   padding: 25px;
+  -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--6 {
   background-color: #404040;
   border-radius: 50%;
   padding: 25px;
+  -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--5 {
   background-color: #404040;
   border-radius: 50%;
   padding: 25px;
+  -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--4 {
   background-color: #404040;
   border-radius: 50%;
   padding: 25px;
+  -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--3 {
   background-color: #404040;
   border-radius: 50%;
   padding: 25px;
+  -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--2 {
   background-color: #404040;
   border-radius: 50%;
   padding: 25px;
+  -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--1 {
   background-color: #404040;
   border-radius: 50%;
   padding: 25px;
+  -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--0 {
@@ -169,12 +186,16 @@
   -ms-grid-column-span: 2;
   grid-area: 4/1/5/3;
   padding: 25px;
+  -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--decimal {
   background-color: #404040;
   border-radius: 50%;
   padding: 25px;
+  -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .calculator__body--buttons .calculator__buttons--operators {

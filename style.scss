@@ -98,12 +98,14 @@ grid-gap: 5px;
                 background-color: $buttons-number-colour;
                 border-radius: 50%;
                 padding: $button-padding;
+                box-shadow: $button-box-shadow;  
 
                }
 
                .button__number--8 {
                 height: 30px;
                 width: 30px;
+                text-align: center;
                 background-color: $buttons-number-colour;
                 border-radius: 50%; 
                 padding: $button-padding; 
@@ -114,41 +116,48 @@ grid-gap: 5px;
                 background-color: $buttons-number-colour;
                 border-radius: 50%;
                 padding: $button-padding;
+                box-shadow: $button-box-shadow;  
                }
                .button__number--6{
                 background-color: $buttons-number-colour;
                 border-radius: 50%;
                 padding: $button-padding;
+                box-shadow: $button-box-shadow;  
 
                }
                .button__number--5{
                 background-color: $buttons-number-colour;
                 border-radius: 50%;
                 padding: $button-padding;
+                box-shadow: $button-box-shadow;  
 
                }
                .button__number--4{
                 background-color: $buttons-number-colour;
                 border-radius: 50%;
                 padding: $button-padding;
+                box-shadow: $button-box-shadow;  
 
                }
                .button__number--3{
                 background-color: $buttons-number-colour;
                 border-radius: 50%;
                 padding: $button-padding;
+                box-shadow: $button-box-shadow;  
 
                }
                .button__number--2{
                 background-color: $buttons-number-colour;
                 border-radius: 50%;
                 padding: $button-padding;
+                box-shadow: $button-box-shadow;  
 
                }
                .button__number--1{
                 background-color: $buttons-number-colour;
                 border-radius: 50%;
                 padding: $button-padding;
+                box-shadow: $button-box-shadow;  
 
                }
 
@@ -157,11 +166,13 @@ grid-gap: 5px;
                 border-radius: 25%;
                 grid-area: 4/1/5/3;
                 padding: $button-padding;
+                box-shadow: $button-box-shadow;  
                }
                .button__number--decimal{
                 background-color: $buttons-number-colour;
                 border-radius: 50%;
                 padding: $button-padding;
+                box-shadow: $button-box-shadow;  
 
                }
    
