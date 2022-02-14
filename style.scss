@@ -5,23 +5,75 @@
 
 $buttons-number-colour: #404040;
 $buttons-operator-colour: orange;
+$buttons-top-colour: lightgrey;
 $button-padding: 25px;
 
+
 .calculator__body {
-    background-color: rgb(151, 40, 40);
+    display: grid;
+   width: 400px;
+   height: 600px;
+    background-color: black;
 }
 
 .calculator__output {
     background-color: darkslategray;
     color: white;
-    font-size: 30px;
-    padding-top: 30px;
+    font-size: 40px;
+    padding-top: 40px;
+text-align: right;
 }
 
 .calculator__body--buttons {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 20% 2fr;
+
+
+    .calculator__buttons--top{
+        display: grid;
+        text-align: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 5px;
+        font-size: 30px;
+        color: white;
+    
+    .button__top--clear{
+        background-color: $buttons-top-colour;
+                border-radius: 50%;
+                padding: $button-padding;
+
+    }
+    .button__top--plusminus{
+        background-color: $buttons-top-colour;
+                border-radius: 50%;
+                padding: $button-padding;
+
+    }
+    .button__top--percentage{
+        background-color: $buttons-top-colour;
+                border-radius: 50%;
+                padding: $button-padding;
+    
+
+    }
+    }
+
+
+ .button__divide{
+        background-color: $buttons-operator-colour;
+        border-radius: 50%;
+        padding: $button-padding;
+        font-size: 40px;
+        align-items: center;
+        text-align: center;
+
+    }
+
+
+
 
     .calculator__buttons--numbers{
        display: grid;
@@ -29,6 +81,7 @@ $button-padding: 25px;
         align-items: center;
         grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    grid-gap: 5px;
         font-size: 30px;
         color: white;
    
@@ -107,43 +160,53 @@ $button-padding: 25px;
 
     .calculator__buttons--operators{
         display:grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
         text-align: center;
-        font-size: 30px;
+        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 5px;
+        text-align: center;
+        font-size: 40px;
 
 
-    .button__divide{
-        background-color: $buttons-operator-colour;
-        border-radius: 50%;
-
-    }
+   
     .button__multiply{
         background-color: $buttons-operator-colour;
         border-radius: 50%;
+        padding: $button-padding;
 
     }
     .button__subtract{
         background-color: $buttons-operator-colour;
         border-radius: 50%;
+        padding: $button-padding;
 
     }
     .button__add{
         background-color: $buttons-operator-colour;
         border-radius: 50%;
+        padding: $button-padding;
 
     }
     .button__equals{
         background-color: $buttons-operator-colour;
         border-radius: 50%;
+        padding: $button-padding;
 
 
     }
         
     }
-   
-
-
-
 
 }
+
+@media screen and (max-width: 380px){
+    .calculator__body {
+        display: grid;
+       width: 80%;
+     height: 80%;
+        background-color: black;
+    }
+
+}
+
