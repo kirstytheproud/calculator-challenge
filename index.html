@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator Challenge</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="calculator__body">
 
-        <div class="calculator__output">1,928 </div>
+        <input type="text" class="calculator__output" id="output_value" step="any"/>
 
             <div class="calculator__body--buttons">
             <div class="calculator__buttons--top">
-                <button class="button__top--clear">C</button>
-                <button class="button__top--plusminus">+/-</button>
-                <button class="button__top--percentage">%</button>
+                <button class="button__top--clear" id="clear">C</button>
+                <button class="button__top--plusminus" id="plus-minus">+/-</button>
+                <button class="operator__button" id="percentage">%</button>
 
 
             </div>
@@ -24,31 +25,31 @@
 
 
 <div class="operators">
-    <button class="button__divide">÷
+    <button class="operator__button" id="divide">÷
     </button>
     
     
 </div>
 
 <div class="calculator__buttons--numbers">
-    <button class="button__number--9">9</button>
-    <button class="button__number--8">8</button>
-    <button class="button__number--7">7</button>
-    <button class="button__number--6">6</button>
-    <button class="button__number--5">5</button>
-    <button class="button__number--4">4</button>
-    <button class="button__number--3">3</button>
-    <button class="button__number--2">2</button>
-    <button class="button__number--1">1</button>
-    <button class="button__number--0">0</button>
-    <button class="button__number--decimal">.</button>
+    <button class="button__number" id="9">9</button>
+    <button class="button__number" id="8">8</button>
+    <button class="button__number" id="7">7</button>
+    <button class="button__number" id="6">6</button>
+    <button class="button__number" id="5">5</button>
+    <button class="button__number" id="4">4</button>
+    <button class="button__number" id="3">3</button>
+    <button class="button__number" id="2">2</button>
+    <button class="button__number" id="1">1</button>
+    <button class="button__number" id="0">0</button>
+    <button class="button__number" id="decimal">.</button>
     
 </div>
 <div class="calculator__buttons--operators">
-    <button class="button__multiply">x</button>
-    <button class="button__subtract">-</button>
-    <button class="button__add">+</button>
-    <button class="button__equals">=</button>
+    <button class="operator__button" id="multiply">x</button>
+    <button class="operator__button" id="subtract">-</button>
+    <button class="operator__button" id="add">+</button>
+    <button class="operator__button" id="equals">=</button>
 </div>
 </div>
     </div>
