@@ -1,13 +1,21 @@
 const calcOutput = document.getElementById("output_value");
 const numberButtons = document.getElementsByClassName("button__number");
 const operatorButtons= document.getElementsByClassName("operator__button");
-
-// const plusMinus = document.getElementById("plus-minus");
-// const percentage = document.getElementById("percentage");
+const clear = document.getElementById("clear");
+const equalsButton = document.getElementById("equals");
+const plusButton = document.getElementById("add");
+const subtractButton = document.getElementById("subtract");
+const multiplyButton = document.getElementById("multiply");
+const divideButton = document.getElementById("divide");
+const plusMinus = document.getElementById("plus-minus");
+const percentage = document.getElementById("percentage");
 
 let calcNumber;
 let calcOperator;
 let displayValue = [];
+let num1;
+let num2;
+let answer;
 
 const onClearClick = (event) => {
     const calcClear = event.target.innerText;
@@ -17,20 +25,16 @@ const onClearClick = (event) => {
  
 }
 
-
 clear.addEventListener("click", onClearClick);
-
-
 
 const onNumberButtonClick = (event) => {
     calcNumber = event.target.innerText;
-   console.log(`The number is ${calcNumber}`);
-  //  calcOutput.value = calcNumber;
+    console.log(`The number is ${calcNumber}`);
+    //  calcOutput.value = calcNumber;
     displayValue.push(calcNumber);
     console.log(displayValue);
-    // newValue= parseInt(displayValue);
     calcOutput.value = displayValue.join('');
-    
+ 
 }
 
 
@@ -44,30 +48,94 @@ console.log(displayValue);
 
 
 
-const onOperatorButtonClick = (event) => {
-    calcOperator = event.target.innerText;
-   console.log(`The operator is ${calcOperator}`);
-   calcOutput.value = `${calcOperator}`;
+const onPlusButtonClick = (event) => {
+
+  num1 = parseFloat(calcOutput.value);
+  displayValue=[];
+  //displayValue.push(num1);
+  // let num2 = num1
+  calcOperator = "+"
+  console.log(num1);
+ 
 }
 
-for (let i = 0; i < operatorButtons.length; i++) {
-  operatorButtons[i].addEventListener("click", onNumberButtonClick);
+plusButton.addEventListener("click", onPlusButtonClick);
+
+
+const onSubtractButtonClick = (event) => {
+
+  num1 = parseFloat(calcOutput.value);
+  displayValue=[];
+  //displayValue.push(num1);
+  // let num2 = num1
+  calcOperator = "-"
+  console.log(num1);
+ 
 }
 
-// const calculator = {
-//   displayValue: '0',
-//   firstOperand: null,
-//   waitingForSecondOperand: false,
-//   operator: null,
-// };
+subtractButton.addEventListener("click", onSubtractButtonClick);
 
 
-function updateDisplay() {
-  const display = document.querySelector('.calculator__output');
-  const screenOutput = [];
+const onMultiplyButtonClick = (event) => {
+
+  num1 = parseFloat(calcOutput.value);
+  displayValue=[];
+  //displayValue.push(num1);
+  // let num2 = num1
+  calcOperator = "x"
+  console.log(num1);
+ 
+}
+
+multiplyButton.addEventListener("click", onMultiplyButtonClick);
+
+const onDivideButtonClick = (event) => {
+
+  num1 = parseFloat(calcOutput.value);
+  displayValue=[];
+  //displayValue.push(num1);
+  // let num2 = num1
+  calcOperator = "÷"
+  console.log(num1);
+ 
+}
+
+divideButton.addEventListener("click", onDivideButtonClick);
 
 
+
+// //this code lets all operators and numbers appear on the same display
+// for (let i = 0; i < operatorButtons.length; i++) {
+//   // operatorButtons[i].addEventListener("click", onNumberButtonClick)
+//   // operatorButtons[i].addEventListener("click", onOperatorButtonClick);
+// }
+
+
+
+
+const onEqualsButtonClick = (event) => {
+  console.log("calculating")
+  num2 = parseFloat(calcOutput.value);
+  console.log(num2);
+  console.log(num1)
+  console.log(calcOperator)
+  if (calcOperator == "+") {
+    result = num1 + num2;
+  }
+  else if (calcOperator =='-') {
+      result = num1 - num2;
+  }
+  else if (calcOperator =="x") {
+      result = num1 * num2;
+  }
+  else if (calcOperator =='÷'){
+      result = num1 / num2;
+}
+calcOutput.value = result; 
+console.log("the result is " + result)
 
 }
 
-updateDisplay();
+equalsButton.addEventListener("click", onEqualsButtonClick);
+
+

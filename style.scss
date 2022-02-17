@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body{
+  background: linear-gradient(to right, #00AAFF, #00FF6C)
+}
+
 $buttons-number-colour: #404040;
 $number-font-colour: #d3d3d3;
 $buttons-operator-colour: orange;
@@ -69,7 +73,7 @@ $button-font-size: 20px;
 
   #divide {
     background-color: $buttons-operator-colour;
-    padding: 20px 40px 20px 40px;
+    padding: 20px 40px 20px 39px;
     font-size: 30px;
     align-items: center;
     text-align: center;
@@ -102,6 +106,7 @@ $button-font-size: 20px;
 
     .button__number--0 {
       background-color: $buttons-number-colour;
+      display: grid;
       grid-area: 4/1/5/3;
       padding: $button-padding;
       box-shadow: $button-box-shadow;
@@ -115,6 +120,16 @@ $button-font-size: 20px;
       font-size: $button-font-size;
       color: $number-font-colour;
     }
+
+
+  }
+
+  .delete {
+    background-color: $buttons-number-colour;
+    padding: $button-padding;
+    box-shadow: $button-box-shadow;
+    font-size: $button-font-size;
+    color: $number-font-colour;
   }
 
   .calculator__buttons--operators {
@@ -135,6 +150,15 @@ $button-font-size: 20px;
     padding: $button-padding;
     font-size: $button-font-size;
     box-shadow: $button-box-shadow;
+  }
+
+  .equals__button {
+    background-color: $buttons-operator-colour;
+    padding: $button-padding;
+    // padding-left: 100px;
+    font-size: $button-font-size;
+    box-shadow: $button-box-shadow;
+   
   }
 
 }

@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#00AAFF), to(#00FF6C));
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
+}
+
 .calculator__body {
   display: -ms-grid;
   display: grid;
@@ -69,7 +74,7 @@
 
 .calculator__body--buttons #divide {
   background-color: orange;
-  padding: 20px 40px 20px 40px;
+  padding: 20px 40px 20px 39px;
   font-size: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -116,6 +121,8 @@
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--0 {
   background-color: #404040;
+  display: -ms-grid;
+  display: grid;
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
@@ -129,6 +136,15 @@
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--decimal {
+  background-color: #404040;
+  padding: 25px;
+  -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+  color: #d3d3d3;
+}
+
+.calculator__body--buttons .delete {
   background-color: #404040;
   padding: 25px;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
@@ -152,6 +168,14 @@
 }
 
 .calculator__body--buttons .operator__button {
+  background-color: orange;
+  padding: 25px;
+  font-size: 20px;
+  -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+}
+
+.calculator__body--buttons .equals__button {
   background-color: orange;
   padding: 25px;
   font-size: 20px;
