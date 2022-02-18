@@ -50,7 +50,9 @@ clear.addEventListener("click", onClearClick);
 
 
 
-// using operator buttons to combine numbers in the array and turn into number values
+// using operator buttons to combine numbers in the array and convert them into number values
+// make the operator show on the display screen 
+
 const onPlusButtonClick = (event) => {
 
   num1 = parseFloat(calcOutput.value);
