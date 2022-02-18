@@ -18,9 +18,10 @@ body {
 .calculator__output {
   background-color: #50B2C0;
   color: white;
-  font-size: 40px;
+  font-size: 50px;
   width: 395px;
   padding-top: 40px;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .calculator__body--buttons {

@@ -15,6 +15,7 @@ $button-padding: 25px;
 $button-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
   inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 $button-font-size: 20px;
+$button-font-family:'Open Sans', sans-serif;
 
 
 .calculator__body {
@@ -28,10 +29,11 @@ $button-font-size: 20px;
 .calculator__output {
   background-color: #50B2C0;
   color: white;
-  font-size: 40px;
+  font-size: 50px;
   width: 395px;
   padding-top: 40px;
-  // text-align:right;
+  font-family: 'Orbitron', sans-serif;
+  
 }
 
 
@@ -47,9 +49,9 @@ $button-font-size: 20px;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
-    // grid-gap: 5px;
     font-size: 30px;
     color: white;
+
 
     .button__top--clear {
       background-color: $buttons-top-colour;
