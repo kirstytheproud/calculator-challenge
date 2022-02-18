@@ -16,6 +16,8 @@ body {
 }
 
 .calculator__output {
+  display: -ms-grid;
+  display: grid;
   background-color: #50B2C0;
   color: white;
   font-size: 50px;
@@ -46,6 +48,7 @@ body {
       grid-template-rows: 1fr;
   font-size: 30px;
   color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 .calculator__body--buttons .calculator__buttons--top .button__top--clear {
@@ -73,7 +76,7 @@ body {
 }
 
 .calculator__body--buttons #divide {
-  background-color: #F48498;
+  background-color: #ff748e;
   padding: 20px 40px 20px 39px;
   font-size: 30px;
   -webkit-box-align: center;
@@ -168,7 +171,7 @@ body {
 }
 
 .calculator__body--buttons .operator__button {
-  background-color: #F48498;
+  background-color: #ff748e;
   padding: 25px;
   font-size: 20px;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
@@ -176,7 +179,7 @@ body {
 }
 
 .calculator__body--buttons .equals__button {
-  background-color: #F48498;
+  background-color: #ff748e;
   padding: 25px;
   font-size: 20px;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);

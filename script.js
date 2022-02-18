@@ -17,16 +17,8 @@ let displayValue = [];
 let num1;
 let num2;
 
-const onClearClick = (event) => {
-    const calcClear = event.target.innerText;
-    console.log(`You are trying to Clear ${calcClear}`);
-    calcOutput.value = " ";
-    displayValue = [];
- 
-}
 
-clear.addEventListener("click", onClearClick);
-
+// push numbers into an array and turn array into number values on the display
 const onNumberButtonClick = (event) => {
     calcNumber = event.target.innerText;
     console.log(`The number is ${calcNumber}`);
@@ -37,7 +29,7 @@ const onNumberButtonClick = (event) => {
 }
 
 
-
+// getting the display output to display the same value as the buttons clicked
 for (let i = 0; i < numberButtons.length; i++) {
   numberButtons[i].addEventListener("click", onNumberButtonClick);
   
@@ -45,8 +37,20 @@ for (let i = 0; i < numberButtons.length; i++) {
 
 console.log(displayValue);
 
+// clear the numbers array with clear button
+const onClearClick = (event) => {
+  const calcClear = event.target.innerText;
+  console.log(`You are trying to Clear ${calcClear}`);
+  calcOutput.value = " ";
+  displayValue = [];
+
+}
+
+clear.addEventListener("click", onClearClick);
 
 
+
+// using operator buttons to combine numbers in the array and turn into number values
 const onPlusButtonClick = (event) => {
 
   num1 = parseFloat(calcOutput.value);
@@ -88,6 +92,7 @@ const onMultiplyButtonClick = (event) => {
 
 multiplyButton.addEventListener("click", onMultiplyButtonClick);
 
+
 const onDivideButtonClick = (event) => {
 
   num1 = parseFloat(calcOutput.value);
@@ -101,7 +106,7 @@ const onDivideButtonClick = (event) => {
 
 divideButton.addEventListener("click", onDivideButtonClick);
 
-
+// using equals button to convert the second half of equation/array into a value in order to perform calculation 
 const onEqualsButtonClick = (event) => {
   console.log("calculating")
   num2 = parseFloat(calcOutput.value);
@@ -109,6 +114,8 @@ const onEqualsButtonClick = (event) => {
   console.log(num1)
   console.log(calcOperator)
 
+
+ //determining what operation to use depending on which operator button is pressed 
   if (calcOperator == "+") {
     result = num1 + num2;
   }
@@ -134,6 +141,7 @@ console.log(displayValue);
 equalsButton.addEventListener("click", onEqualsButtonClick);
 
 
+// using pop() to remove last item from the array and the display screen
 const onDeleteButtonClick = (event) => {
   console.log("DELETE");
   displayValue.pop();
@@ -144,6 +152,8 @@ const onDeleteButtonClick = (event) => {
 
 deleteButton.addEventListener("click", onDeleteButtonClick);
 
+
+// convert a number into a percentage
 const onPercentageButtonClick = (event) => {
   console.log("Percentage")
   calcOperator ="%";
@@ -157,7 +167,7 @@ const onPercentageButtonClick = (event) => {
 
 percentageButton.addEventListener("click", onPercentageButtonClick);
 
-
+// convert number into a negative or positive value via the plusminus button
 const onplusMinusButtonClick = (event) => {
   console.log("Plus Minus!")
   num1 = parseFloat(calcOutput.value)*-1;
