@@ -7,10 +7,10 @@ body{
   background-color: rgb(34, 29, 39);
 }
 
-$buttons-number-colour: #404040;
+$buttons-number-colour: #39393A;
 $number-font-colour: #d3d3d3;
-$buttons-operator-colour: orange;
-$buttons-top-colour: lightgrey;
+$buttons-operator-colour: #F48498;
+$buttons-top-colour: #FEEFDD;
 $button-padding: 25px;
 $button-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
   inset -2px -2px 3px rgba(0, 0, 0, 0.6);
@@ -26,7 +26,7 @@ $button-font-size: 20px;
 }
 
 .calculator__output {
-  background-color: darkslategray;
+  background-color: #50B2C0;
   color: white;
   font-size: 40px;
   width: 395px;

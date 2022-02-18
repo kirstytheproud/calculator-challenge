@@ -16,7 +16,7 @@ body {
 }
 
 .calculator__output {
-  background-color: darkslategray;
+  background-color: #50B2C0;
   color: white;
   font-size: 40px;
   width: 395px;
@@ -48,7 +48,7 @@ body {
 }
 
 .calculator__body--buttons .calculator__buttons--top .button__top--clear {
-  background-color: lightgrey;
+  background-color: #FEEFDD;
   padding: 25px;
   font-size: 20px;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
@@ -56,7 +56,7 @@ body {
 }
 
 .calculator__body--buttons .calculator__buttons--top .button__top--plusminus {
-  background-color: lightgrey;
+  background-color: #FEEFDD;
   padding: 25px;
   font-size: 20px;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
@@ -64,7 +64,7 @@ body {
 }
 
 .calculator__body--buttons .calculator__buttons--top #percentage {
-  background-color: lightgrey;
+  background-color: #FEEFDD;
   font-size: 20px;
   padding: 25px;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
@@ -72,7 +72,7 @@ body {
 }
 
 .calculator__body--buttons #divide {
-  background-color: orange;
+  background-color: #F48498;
   padding: 20px 40px 20px 39px;
   font-size: 30px;
   -webkit-box-align: center;
@@ -110,7 +110,7 @@ body {
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number {
   text-align: center;
-  background-color: #404040;
+  background-color: #39393A;
   padding: 25px;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
           box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
@@ -119,7 +119,7 @@ body {
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--0 {
-  background-color: #404040;
+  background-color: #39393A;
   display: -ms-grid;
   display: grid;
   -ms-grid-row: 4;
@@ -135,7 +135,7 @@ body {
 }
 
 .calculator__body--buttons .calculator__buttons--numbers .button__number--decimal {
-  background-color: #404040;
+  background-color: #39393A;
   padding: 25px;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
           box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
@@ -144,7 +144,7 @@ body {
 }
 
 .calculator__body--buttons .delete {
-  background-color: #404040;
+  background-color: #39393A;
   padding: 25px;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
           box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
@@ -167,7 +167,7 @@ body {
 }
 
 .calculator__body--buttons .operator__button {
-  background-color: orange;
+  background-color: #F48498;
   padding: 25px;
   font-size: 20px;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
@@ -175,7 +175,7 @@ body {
 }
 
 .calculator__body--buttons .equals__button {
-  background-color: orange;
+  background-color: #F48498;
   padding: 25px;
   font-size: 20px;
   -webkit-box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
