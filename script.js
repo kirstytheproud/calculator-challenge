@@ -156,3 +156,16 @@ const onPercentageButtonClick = (event) => {
 }
 
 percentageButton.addEventListener("click", onPercentageButtonClick);
+
+
+const onplusMinusButtonClick = (event) => {
+  console.log("Plus Minus!")
+  num1 = parseFloat(calcOutput.value)*-1;
+  calcOutput.value = num1;
+  displayValue=[];
+  console.log(num1);
+  console.log(displayValue);
+
+}
+
+plusMinus.addEventListener("click", onplusMinusButtonClick);
