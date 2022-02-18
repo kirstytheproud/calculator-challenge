@@ -8,7 +8,7 @@ const subtractButton = document.getElementById("subtract");
 const multiplyButton = document.getElementById("multiply");
 const divideButton = document.getElementById("divide");
 const plusMinus = document.getElementById("plus-minus");
-const percentage = document.getElementById("percentage");
+const percentageButton = document.getElementById("percentage");
 const deleteButton = document.getElementById("delete");
 
 let calcNumber;
@@ -120,7 +120,11 @@ const onEqualsButtonClick = (event) => {
   }
   else if (calcOperator =='÷'){
       result = num1 / num2;
-}
+  }  
+    else if (calcOperator =='%'){
+  
+        result = num1* num2;
+  }
 calcOutput.value = result; 
 console.log("the result is " + result)
 displayValue = [];
@@ -139,3 +143,16 @@ const onDeleteButtonClick = (event) => {
 }
 
 deleteButton.addEventListener("click", onDeleteButtonClick);
+
+const onPercentageButtonClick = (event) => {
+  console.log("Percentage")
+  calcOperator ="%";
+  num1 = parseFloat(calcOutput.value)/100;
+  calcOutput.value = num1;
+  displayValue=[];
+  console.log(num1);
+  console.log(displayValue);
+
+}
+
+percentageButton.addEventListener("click", onPercentageButtonClick);
