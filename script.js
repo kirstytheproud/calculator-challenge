@@ -9,13 +9,13 @@ const multiplyButton = document.getElementById("multiply");
 const divideButton = document.getElementById("divide");
 const plusMinus = document.getElementById("plus-minus");
 const percentage = document.getElementById("percentage");
+const deleteButton = document.getElementById("delete");
 
 let calcNumber;
 let calcOperator;
 let displayValue = [];
 let num1;
 let num2;
-let answer;
 
 const onClearClick = (event) => {
     const calcClear = event.target.innerText;
@@ -30,7 +30,6 @@ clear.addEventListener("click", onClearClick);
 const onNumberButtonClick = (event) => {
     calcNumber = event.target.innerText;
     console.log(`The number is ${calcNumber}`);
-    //  calcOutput.value = calcNumber;
     displayValue.push(calcNumber);
     console.log(displayValue);
     calcOutput.value = displayValue.join('');
@@ -52,10 +51,10 @@ const onPlusButtonClick = (event) => {
 
   num1 = parseFloat(calcOutput.value);
   displayValue=[];
-  //displayValue.push(num1);
-  // let num2 = num1
   calcOperator = "+"
   console.log(num1);
+  console.log("PLUS")
+  calcOutput.value = "+"
  
 }
 
@@ -66,10 +65,10 @@ const onSubtractButtonClick = (event) => {
 
   num1 = parseFloat(calcOutput.value);
   displayValue=[];
-  //displayValue.push(num1);
-  // let num2 = num1
   calcOperator = "-"
   console.log(num1);
+  console.log("SUBTRACT")
+  calcOutput.value = "-"
  
 }
 
@@ -80,10 +79,10 @@ const onMultiplyButtonClick = (event) => {
 
   num1 = parseFloat(calcOutput.value);
   displayValue=[];
-  //displayValue.push(num1);
-  // let num2 = num1
   calcOperator = "x"
   console.log(num1);
+  console.log("MULTIPLY")
+  calcOutput.value = "x"
  
 }
 
@@ -93,24 +92,14 @@ const onDivideButtonClick = (event) => {
 
   num1 = parseFloat(calcOutput.value);
   displayValue=[];
-  //displayValue.push(num1);
-  // let num2 = num1
   calcOperator = "÷"
   console.log(num1);
+  console.log("DIVIDE")
+  calcOutput.value = "÷"
  
 }
 
 divideButton.addEventListener("click", onDivideButtonClick);
-
-
-
-// //this code lets all operators and numbers appear on the same display
-// for (let i = 0; i < operatorButtons.length; i++) {
-//   // operatorButtons[i].addEventListener("click", onNumberButtonClick)
-//   // operatorButtons[i].addEventListener("click", onOperatorButtonClick);
-// }
-
-
 
 
 const onEqualsButtonClick = (event) => {
@@ -119,6 +108,7 @@ const onEqualsButtonClick = (event) => {
   console.log(num2);
   console.log(num1)
   console.log(calcOperator)
+
   if (calcOperator == "+") {
     result = num1 + num2;
   }
@@ -133,9 +123,19 @@ const onEqualsButtonClick = (event) => {
 }
 calcOutput.value = result; 
 console.log("the result is " + result)
-
+displayValue = [];
+console.log(displayValue);
 }
 
 equalsButton.addEventListener("click", onEqualsButtonClick);
 
 
+const onDeleteButtonClick = (event) => {
+  console.log("DELETE");
+  displayValue.pop();
+  console.log(displayValue);
+  calcOutput.value = displayValue.join('');
+
+}
+
+deleteButton.addEventListener("click", onDeleteButtonClick);

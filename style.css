@@ -4,8 +4,7 @@
 }
 
 body {
-  background: -webkit-gradient(linear, left top, right top, from(#00AAFF), to(#00FF6C));
-  background: linear-gradient(to right, #00AAFF, #00FF6C);
+  background-color: #221d27;
 }
 
 .calculator__body {
@@ -64,7 +63,7 @@ body {
           box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
-.calculator__body--buttons .calculator__buttons--top .button__top--percentage {
+.calculator__body--buttons .calculator__buttons--top #percentage {
   background-color: lightgrey;
   font-size: 20px;
   padding: 25px;

@@ -4,7 +4,7 @@
 }
 
 body{
-  background: linear-gradient(to right, #00AAFF, #00FF6C)
+  background-color: rgb(34, 29, 39);
 }
 
 $buttons-number-colour: #404040;
@@ -63,7 +63,7 @@ $button-font-size: 20px;
       font-size: $button-font-size;
       box-shadow: $button-box-shadow;
     }
-    .button__top--percentage {
+    #percentage {
       background-color: $buttons-top-colour;
       font-size: $button-font-size;
       padding: $button-padding;
@@ -90,14 +90,12 @@ $button-font-size: 20px;
     align-content: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    // grid-gap: 5px;
     font-size: 30px;
     color: white;
 
     .button__number {
       text-align: center;
       background-color: $buttons-number-colour;
-      // border-radius: 50%;
       padding: $button-padding;
       box-shadow: $button-box-shadow;
       font-size: $button-font-size;
@@ -138,10 +136,7 @@ $button-font-size: 20px;
     align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
-    // grid-gap: 5px;
     text-align: center;
-    // font-size: 40px;
-
  
   }
 
@@ -155,7 +150,6 @@ $button-font-size: 20px;
   .equals__button {
     background-color: $buttons-operator-colour;
     padding: $button-padding;
-    // padding-left: 100px;
     font-size: $button-font-size;
     box-shadow: $button-box-shadow;
    
